@@ -11,11 +11,17 @@ while numero != 0:
 ordem = input("Deseja ordem crescente ou decrescente ? :")
 
 if ordem == "decrescente":
-    contato = range(len(lista)):
-        if lista[i] <= lista[i + 1]:
-            c = lista[i]
-            lista[i] = lista[i + 1]
-            lista[i + 1] = c
+    for i in range(len(lista)):
+        print(lista[i])
+        print("___")
+        for j in range(i + 1, len(lista)):
+            print(lista[j])
+            print("***")
+            if lista[i] <= lista[j]:
+                c = lista[i]
+                lista[i] = lista[j]
+                lista[j] = c
 
+print(lista)
 
 

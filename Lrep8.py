@@ -1,1 +1,13 @@
-Crie um programa que solicite ao usuário 5 números e ao final imprima a soma de todos eles.
+lista = []
+contador = 0
+soma = 0
+
+while contador != 5 :
+    numero = int(input("Digite numeros que deseja que sejam somados: "))
+    lista.append(numero)
+    contador += 1
+    
+for i in range(len(lista)):
+    soma += lista[i]
+
+print(soma)
